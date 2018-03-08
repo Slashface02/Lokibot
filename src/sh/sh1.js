@@ -71,7 +71,7 @@ class sh1 {
             return message
         }
 
-        this.sh1 = function(chan) {
+        this.sh1-1 = function(chan) {
             var message
             var emb = new RichEmbed()
                 .setColor(this.COLORS.sh)
@@ -85,8 +85,18 @@ class sh1 {
             return message
         }
 
-        this.sh2 = function(chan) {
-            
+        this.sh1-2 = function(chan) {
+            var message
+            var emb = new RichEmbed()
+                .setColor(this.COLORS.sh)
+                .setDescription('__Hochland der Geister__\n__**Stufe 1-2**__ \nBelohnung: **7 Ehrenmünzen**\nWie oft spielbar? - 99 Mal\nSpielbar mit **Ritterlevel 2**\n\n')
+                .addField('⠀', 'Nicht erlaubt:\n\n6 - 6 Sterne-Einheiten, fliegende Einheiten\n\n\n**Gegner:**\n\n1x Entwickeltes Skelett\n\n\n**Mögliche 3* Lösung:**\n\n2x Hochelfen Bogenschütze')
+                .setImage('https://cdn.discordapp.com/attachments/361867792544432129/361871229726097408/1-2.JPG')
+                .setThumbnail('https://images-ext-2.discordapp.net/external/HXooYClYwsRMLErzuGFW_Q9fYLgEpmQT8T6Y8jbvFa0/https/images-ext-1.discordapp.net/external/Ya038D-O3e8KX4WpfI7AbUVskdX5ABsHVMLnMjTuna4/https/cdn.discordapp.com/attachments/358286017263828997/358676122457735179/image.jpg')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
         }
 
         this.sh3 = function(chan) {
